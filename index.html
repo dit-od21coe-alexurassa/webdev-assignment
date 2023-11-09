@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Page Assignment</title>
+    <link rel="stylesheet" href="./dist/css/compressed/styles.min.css" />
+  </head>
+  <body class="container">
+    <h3>Simple Web page with search functionality</h3>
+    <form method="get">
+      <div class="form-group">
+        <input
+          type="text"
+          placeholder="search cat&hellip;"
+          class="search-input"
+        />
+        <!-- <button type="button" class="search-btn">Search</button> -->
+      </div>
+      <section>
+        <h4>Search Results</h4>
+        <ul class="search-results"></ul>
+      </section>
+    </form>
+
+    <hr />
+
+    <section>
+      <h4>Available cats</h4>
+      <ul id="available-cats"></ul>
+    </section>
+    <h2>Cats owner</h2>
+    <div class="img-container">
+      <img src="./giphy.gif" alt="" />
+    </div>
+  </body>
+</html>
+
+<script src="./index.js"></script>
