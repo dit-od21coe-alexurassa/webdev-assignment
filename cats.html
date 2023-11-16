@@ -1,0 +1,72 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Cats</title>
+    <link rel="stylesheet" href="./dist/css/compressed/styles.min.css" />
+    <link rel="stylesheet" href="./dist/css/compressed/forms.min.css" />
+    <link rel="stylesheet" href="./dist/css/compressed/cats.min.css" />
+  </head>
+  <body class="container">
+    <!-- navbar -->
+    <div class="navbar">
+      <a class="navbar-item" href="./index.html">Home</a>
+      <a class="navbar-item" href="./cats.html">All cats</a>
+    </div>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Cat Name</th>
+          <th>Owner</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td><a href="./detail-pages/cat-alex.html">Alex</a></td>
+          <td>Omari Mponda</td>
+        </tr>
+        <tr>
+          <td><a href="./detail-pages/cat-ferguson.html">Ferguson</a></td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td><a href="./detail-pages/cat-peter.html">Peterson</a></td>
+          <td>Mathew Kitwila</td>
+        </tr>
+        <tr>
+          <td><a href="./detail-pages/cat-livingstone.html">Livingstone</a></td>
+          <td>Juma Mgunda</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <section class="form-section">
+      <button id="toggle-catform-btn" role="button" class="btn">Add cat</button>
+
+      <form id="cats-form">
+        <div class="form-group">
+          <label for="name">Cat Name</label>
+          <input type="text" class="form-control" required id="name" />
+        </div>
+
+        <div class="form-group">
+          <label for="name">Owner</label>
+          <input type="text" class="form-control" required id="owner" />
+        </div>
+
+        <button
+          class="btn submit-btn"
+          type="button"
+          role="button"
+          aria-label="submit button"
+        >
+          Submit cat
+        </button>
+      </form>
+    </section>
+  </body>
+</html>
+
+<script src="./cats.js"></script>

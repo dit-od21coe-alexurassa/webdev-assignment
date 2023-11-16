@@ -2,7 +2,7 @@ const searchBtn = document.body.querySelector(".search-btn");
 const searchInput = document.body.querySelector(".search-input");
 const searchResultsElement = document.querySelector(".search-results");
 const availableItemsEl = document.querySelector("#available-cats")
-const cats = ["Alex", "Ferguson", "Peterson", "David Livingstone", "David"];
+const cats = ["Alex", "Ferguson", "Peterson", "Livingstone", "David"];
 
 
 function appendAvailableItems () {

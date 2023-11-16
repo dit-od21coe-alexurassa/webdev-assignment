@@ -2,6 +2,7 @@ $primary-color: rgb(14, 132, 179);
 
 * {
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 @mixin default-font-settings($font-size: 14px) {
@@ -82,9 +83,56 @@ $primary-color: rgb(14, 132, 179);
   }
 }
 
-
 .img-container {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+
+.navbar {
+  list-style-type: none !important;
+  display: flex;
+  align-items: center;
+  background: rgb(122, 175, 218);
+
+  .navbar-item {
+    margin-right: 0.5rem;
+    height: 100%;
+    padding: 0.5rem;
+
+    &:hover {
+      background: #888a;
+      cursor: pointer;
+    }
+  }
+}
+
+.table {
+  width: 100% !important;
+  background-color: #fffc;
+  margin: 10px 0px;
+  border: 1px rgb(78, 78, 78) solid;
+  border-radius: 2px;
+
+  thead {
+    border-bottom: 1px rgb(78, 78, 78) solid !important;
+  }
+
+  td {
+    text-align: center;
+  }
+}
+
+.btn {
+  padding: 0.5rem 0.75rem;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.list {
+  li {
+    margin: 0.5rem 0;
+  }
 }
